@@ -1,0 +1,18 @@
+.header {
+    
+}
+
+.left-side {
+    .nav {
+        border: none;
+    }
+}
+
+.right-side {
+    select {
+        border: none;
+    }
+    button:first-child {
+        margin-right: 12px;
+    }
+}

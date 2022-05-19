@@ -1,0 +1,16 @@
+<div class="row no-gutters">
+  <!-- Email Box -->
+  <div class="col-lg-1 px-0 email-box">
+    <app-email-box [data]="folders"></app-email-box>
+  </div>
+
+  <!-- Email Preview -->
+  <div class="col-lg-11 email-preview">
+    <router-outlet></router-outlet>
+  </div>
+  
+  <!-- Email Detail -->
+  <!-- <div class="col-lg-12 email-detail">
+    <router-outlet name="second-outlet"></router-outlet>
+  </div> -->
+</div>

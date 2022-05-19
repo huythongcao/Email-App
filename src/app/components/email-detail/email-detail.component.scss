@@ -1,0 +1,15 @@
+.email-detail-header {
+    background-color: #ccc;
+}
+.header-title {
+    // font-weight: bold;
+    font-size: 20px;
+}
+.btn {
+    font-size: 14px;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

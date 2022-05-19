@@ -1,0 +1,10 @@
+<div class="email-box-container d-flex flex-column justify-content-center">
+  <button
+    *ngFor="let folder of folders"
+    class="btn text-left"
+    [routerLink]="folder"
+    routerLinkActive="bg-primary text-white"
+  >
+    <i class="fa-solid fa-folder mr-1"></i> {{ folder }}
+  </button>
+</div>

@@ -1,0 +1,24 @@
+<table class="table email-preview">
+  <thead>
+    <tr>
+      <th scope="col">Sender</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let folderInfo of folderInfos"
+      [routerLink]="[folderInfo._id]"
+      routerLinkActive="bg-primary text-white"
+    >
+      <td scope="row">{{ folderInfo.from | message: 43 }}</td>
+      <td>{{ folderInfo.subject }}</td>
+      <td>{{ folderInfo.date | date: "yyyy-MM-dd" }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="email-detail">
+  <router-outlet></router-outlet>
+</div>
